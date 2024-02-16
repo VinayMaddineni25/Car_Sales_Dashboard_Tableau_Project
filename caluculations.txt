@@ -1,0 +1,60 @@
+YTD Total Sales:
+
+SUM(IF 
+YEAR([Date]) = {FIXED : MAX(YEAR([Date]))}
+THEN
+[Price ($)]
+END)
+-------------
+PYTD Total Sales:
+
+SUM(IF 
+YEAR([Date]) = {FIXED : MAX(YEAR([Date]))}-1
+THEN
+[Price ($)]
+END)
+-------------
+YOY Sales Growth:
+
+([YTD Total Sales] - [PYTD Total Sales])
+/[PYTD Total Sales]
+-------------
+YTD Cars Sold:
+
+COUNT(IF
+YEAR([Date]) = {MAX(YEAR([Date]))}
+THEN
+[Car id]
+END) 
+-------------
+PYTD Cars Sold:
+
+COUNT(IF
+YEAR([Date]) = {MAX(YEAR([Date]))}-1
+THEN
+[Car id]
+END) 
+-------------
+YOY Cars Sold Growth
+
+([YTD Cars Sold]-[PYTD Cars Sold])/[PYTD Cars Sold]
+-------------
+YTD Avg Price
+
+YTD Total Sales/[YTD Cars Sold]
+-------------
+PYTD Avg Price
+
+PYTD Total Sales/[PYTD Cars Sold]
+-------------
+YOY Avg Growth
+
+([YTD Avg Price]-[PYTD Avg Price])/[PYTD Avg Price]
+-------------
+Min Date
+
+{MIN([Date])}
+-------------
+Max Date
+
+{MAX([Date])}
