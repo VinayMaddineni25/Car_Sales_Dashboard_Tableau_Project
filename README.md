@@ -1,3 +1,23 @@
+# Car Sales Dashboard
+
+## Problem Statement
+
+This dashboard provides real-time insights into key performance indicators (KPIs) related to our sales data. These insights enable us to make informed decisions, monitor our progress, and identify trends and opportunities for growth.
+
+## Key Performance Indicators
+
+### Sales Overview
+- **Year-to-Date (YTD) Total Sales**
+- **Year-over-Year (YOY) Growth in Total Sales**
+
+### Average Price Analysis
+- **YTD Average Price**
+- **YOY Growth in Average Price**
+
+### Cars Sold Metrics
+- **YTD Cars Sold**
+- **YOY Growth in Cars Sold**
+
 ## Steps to Implement
 
 ### Step 1: Load Data
@@ -161,3 +181,9 @@ This Car Sales Dashboard provides a comprehensive view of key performance indica
 ## Summary
 
 The Car Sales Dashboard provides valuable insights into the current sales performance, highlighting significant growth in total sales and the number of cars sold. Despite a slight decrease in the average price, the overall sales trend is positive. The visualizations offer a clear view of sales distribution by body style, color, dealer region, and company, helping to identify key trends and areas of strength. This comprehensive dashboard is an essential tool for informed decision-making and strategic planning in the car sales industry.
+
+This dashboard allows users to:
+
+1. **Monitor Sales Progress**: Track the total sales and compare them year-over-year to assess growth.
+2. **Analyze Pricing Trends**: Evaluate the average price of sales and observe how it changes over the years.
+3. **Track Car Sales**: Keep an eye on the number of cars sold and measure their growth year-over-year.
